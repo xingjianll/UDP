@@ -7,27 +7,30 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.Base64;
-import java.util.Base64.Decoder;
-import java.util.Base64.Encoder;
 
 import javax.imageio.ImageIO;
-
-import BroadCast.BroadCast;
 import UDP.IfUDP;
 import UDP.IfUDPUser;
 import UDP.UDP;
-import UDP.UDPConstants;
-import UDPUser.ChatConstants;
 
 public class UDPUser implements IfUDPUser
 {
 	//test test. Testing github commit
+	//test test. Testing github commit
+
+	//test test. Testing github commit
+
+	//test test. Testing github commit
+
+	//test test. Testing github commit
+
+	//test test. Testing github commit
+
+	//test test. Testing github commit
+
 	public static IfUDP udp;
 	byte[] text;
 	ServerFrame frame;
