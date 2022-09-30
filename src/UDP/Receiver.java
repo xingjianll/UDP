@@ -52,7 +52,9 @@ public class Receiver extends Thread
 				//receive packet
 				UDP.socket.receive(slicePacket);
 				port = slicePacket.getPort();
+				System.out.println(port);
 				ip = slicePacket.getAddress().getHostAddress();
+				System.out.println(ip);
 				dataStr = new String(slicePacket.getData(), StandardCharsets.UTF_8);
 
 				// find the index of the three separators

@@ -57,14 +57,7 @@ public class UDPUser implements IfUDPUser
 		String msgStr = Integer.toString(msg.msgType) + ChatConstants.SPR + msg.time + ChatConstants.SPR
 				+ msg.userID + ChatConstants.SPR + msg.content;
 							
-		try 
-		{
-			udp.send(InetAddress.getByName("localhost").getHostAddress(), 4396, msgStr);
-		} 
-		catch (UnknownHostException e) 
-		{
-			e.printStackTrace();
-		}
+		udp.send("192.168.2.11", 4396, msgStr);
 	}
 	
 	

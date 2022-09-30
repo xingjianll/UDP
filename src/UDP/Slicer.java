@@ -1,5 +1,6 @@
 package UDP;
 
+import java.io.IOException;
 import java.net.DatagramPacket;
 
 import java.net.InetAddress;
@@ -61,7 +62,19 @@ public class Slicer extends Thread
 					//get the components of a message in message list
 					try 
 					{
+						
 						peerAddr = InetAddress.getByName(message.ip);
+						System.out.println(peerAddr.getHostAddress());
+//						System.out.println(peerAddr.getCanonicalHostName());
+//						if (peerAddr.isLoopbackAddress()) 
+//						{
+//							System.out.println("is reachable");
+//						}
+//						else
+//						{
+//							System.out.println("is not reachable");
+//						}
+						
 					} 
 					catch (UnknownHostException e) 
 					{
